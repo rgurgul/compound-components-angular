@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import {CountryComponent} from "../country/country.component";
+import { Component } from '@angular/core';
+import { CountryComponent } from "../country/country.component";
 
 @Component({
   selector: 'app-country-selected',
@@ -7,8 +7,6 @@ import {CountryComponent} from "../country/country.component";
 })
 export class CountrySelectedComponent {
 
-  constructor(public  country: CountryComponent) {
-
-  }
+  constructor(public country: CountryComponent) { }
 
 }

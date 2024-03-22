@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CountryService } from './services/country.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'compound-components-angular';
-
-
+  countries$ = this.countryService.getCountries();
+  constructor(private countryService: CountryService) { }
 }

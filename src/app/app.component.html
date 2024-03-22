@@ -1,4 +1,6 @@
-<app-country>
-  <app-country-selected></app-country-selected>
-  <app-country-flag></app-country-flag>
+<app-country [countries$]="countries$">
+  <div>
+    <app-country-selected></app-country-selected>
+    <app-country-flag></app-country-flag>
+  </div>
 </app-country>

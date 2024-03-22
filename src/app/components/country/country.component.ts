@@ -1,18 +1,15 @@
-import {Component, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
-import { CountryService } from 'src/app/services/country.service';
-
+import { country } from 'src/app/services/country.service';
 
 @Component({
   selector: 'app-country',
   templateUrl: './country.component.html',
   styleUrls: ['./country.component.css']
 })
-export class CountryComponent  {
-  countries$ = this.countryService.getCountries();
+export class CountryComponent {
   selected$: Subject<string> = new Subject<string>();
-  constructor(private countryService: CountryService) { }
-
+  @Input() countries$!: Observable<country[]>;
   changed(value: any) {
     this.selected$.next(value);
   }

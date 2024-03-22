@@ -1,6 +1,7 @@
 <h2>computed components</h2>
-<div style="display: flex;">
+<div style="display: flex; gap: 10px; align-items: flex-start;">
   <select #countrySelect (change)="changed(countrySelect.value)">
+    <option selected disabled>select country</option>
     <option *ngFor="let country of countries$ | async" [value]="country.code">
       {{ country.name }}
     </option>

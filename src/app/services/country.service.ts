@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Observable, of} from "rxjs";
 
-interface country {
+export interface country {
   name:string;
   code: string | null;
 }

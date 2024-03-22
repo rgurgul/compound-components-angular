@@ -12,8 +12,9 @@ interface country {
 export class CountryService {
   countries: country[] = [
     {name: 'Australia', code: 'AU'},
-    {name: 'Austria', code: 'AT'},
+    {name: 'Slovakia', code: 'SK'},
     {name: 'Azerbaijan', code: 'AZ'},
+    {name: 'Polska', code: 'PL'},
     {name: 'Bahamas', code: 'BS'},
   ]
 
